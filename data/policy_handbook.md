@@ -157,4 +157,4 @@
 - If there is no response in 2 working days, or the issue is urgent, the student may escalate to the Program Office quoting the ticket ID.
 - Questions not covered by this handbook should be raised as a support ticket.
 **Contact:** Support Desk - support@institute.edu
-**Keywords:** support ticket, raise complaint, help, issue, problem, escalate, no response, contact
+**Keywords:** refund, money back, withdraw, withdrawal, cancel admission, duplicate payment, excess payment, leave college, quit, drop out, opt out, discontinue

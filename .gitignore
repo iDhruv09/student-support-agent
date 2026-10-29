@@ -1,0 +1,16 @@
+# Secrets - never upload 
+.env 
+
+# Virtual environment and cache 
+venv/ 
+__pycache__/ 
+*.pyc
+
+
+# Streamlit local config 
+.streamlit/secrets.toml 
+
+# OS / editor files 
+.DS_Store 
+Thumbs.db 
+.vscode/

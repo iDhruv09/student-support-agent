@@ -1,0 +1,89 @@
+{
+  "overall_pass_%": 100.0,
+  "passed": 44,
+  "total": 44,
+  "by_category": [
+    {
+      "category": "errors",
+      "cases": 5,
+      "passed": 5,
+      "avg_latency_s": 2.83,
+      "avg_in_tokens": 1658.6,
+      "avg_out_tokens": 110.6,
+      "pass_%": 100.0
+    },
+    {
+      "category": "hallucination",
+      "cases": 5,
+      "passed": 5,
+      "avg_latency_s": 0.82,
+      "avg_in_tokens": 2312.2,
+      "avg_out_tokens": 200.8,
+      "pass_%": 100.0
+    },
+    {
+      "category": "informal",
+      "cases": 3,
+      "passed": 3,
+      "avg_latency_s": 3.87,
+      "avg_in_tokens": 2591.33,
+      "avg_out_tokens": 270.33,
+      "pass_%": 100.0
+    },
+    {
+      "category": "injection",
+      "cases": 4,
+      "passed": 4,
+      "avg_latency_s": 0.5,
+      "avg_in_tokens": 1171.75,
+      "avg_out_tokens": 128.25,
+      "pass_%": 100.0
+    },
+    {
+      "category": "memory",
+      "cases": 8,
+      "passed": 8,
+      "avg_latency_s": 1.25,
+      "avg_in_tokens": 1637.75,
+      "avg_out_tokens": 101.88,
+      "pass_%": 100.0
+    },
+    {
+      "category": "multi_turn",
+      "cases": 3,
+      "passed": 3,
+      "avg_latency_s": 4.0,
+      "avg_in_tokens": 2641.67,
+      "avg_out_tokens": 212.33,
+      "pass_%": 100.0
+    },
+    {
+      "category": "multilingual",
+      "cases": 8,
+      "passed": 8,
+      "avg_latency_s": 3.91,
+      "avg_in_tokens": 2638.38,
+      "avg_out_tokens": 336.12,
+      "pass_%": 100.0
+    },
+    {
+      "category": "out_of_scope",
+      "cases": 2,
+      "passed": 2,
+      "avg_latency_s": 1.49,
+      "avg_in_tokens": 1173.5,
+      "avg_out_tokens": 108.5,
+      "pass_%": 100.0
+    },
+    {
+      "category": "tool_choice",
+      "cases": 6,
+      "passed": 6,
+      "avg_latency_s": 1.29,
+      "avg_in_tokens": 2858.67,
+      "avg_out_tokens": 265.83,
+      "pass_%": 100.0
+    }
+  ],
+  "failed": []
+}

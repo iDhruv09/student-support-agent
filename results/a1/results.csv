@@ -1,0 +1,46 @@
+﻿test,scenario,student,question,expected_tools,tools_used,tool_appropriate,success,decision,evidence,latency_s,llm_calls,input_tokens,output_tokens,trace_id,failure_reason,answer
+A1-01,Fee status (tool use),S101,What is my current fee status?,get_fee_status,get_fee_status,True,True,used_tools,-,2.11,2,2427,218,TR-2874B859,,"Your current fee details are:
+
+- **Total fee:** Rs 3,50,000  
+- **Amount paid:** Rs 2,50,000  
+- **Outstanding balance:** Rs 1,00,000  
+- **Due date:** 15 Nov 2026 (16 days left)  
+- **Payment status:** Pending  
+
+Let me know if you need any help with payment options or have other questions!"
+A1-02,Portal failed -> policy retrieval,S101,The payment portal failed. Can I pay on the next working day?,search_policy,search_policy,True,True,retrieved_policy,payment-portal-failure (0.41); fee-payment-deadline-and-late-fee (0.25),2.19,2,2923,348,TR-C86D46E7,,"Yes. If the online payment portal fails on the due‑date, you may pay on the next working day **without** a late‑fee **provided you report the failure on the same day**.
+
+**What you need to do**
+
+1. Email **accounts@institute.edu** on the same day the portal failed.  
+2. Include your student ID, a screenshot of the error (or the failed‑transaction reference, if you have one).  
+
+If you send the email on the same day, you can settle the fee on the next working day (Monday‑Friday, excluding institute holidays) and no Rs 100 per‑day late fee will be applied.  
+
+If the failure occurs on a Friday, the next working day will be Monday.  
+
+If you do not report the failure on the same day, the normal late‑fee of Rs 100 per day will apply.  
+
+Let me know if you need help drafting the email or raising a support ticket."
+A1-03,Scholarship status (tool use),S101,What is my scholarship status?,get_scholarship_status,get_scholarship_status,True,True,used_tools,-,1.18,2,2392,99,TR-66116F97,,Your scholarship status is **Merit Scholarship – Approved (20 % tuition waiver)**.
+A1-04,Two tools in one question,S101,"How much do I owe, and what happens if I pay after the due date?","get_fee_status, search_policy","get_fee_status, search_policy",True,True,used_tools,fee-payment-deadline-and-late-fee (0.34); fee-installments (0.23),2.08,3,4189,376,TR-F49A5835,,"Your current fee balance is **Rs 1,00,000**. The due date for this payment is **15 Nov 2026** (16 days from today).
+
+**If you pay after the due date:**
+
+- A late fee of **Rs 100 per calendar day** will be added for each day the payment is delayed.  
+- The late fee is calculated on the number of days overdue, not on the amount outstanding.  
+- If the fee remains unpaid for **more than 30 days** after the due date, you may be **barred from appearing in the end‑term examinations** for this trimester.  
+
+(These rules are from the “Fee Payment Deadline and Late Fee” policy section.)"
+A1-05,Greeting -> answer directly,S101,"Hi, good morning!",none,none,True,True,answered_directly,-,0.51,1,1162,49,TR-72E586F9,,Good morning! How can I assist you today?
+A1-06,Save useful fact (session 1),S101,Please remember that I am in PGDM AI&DS and I prefer short answers.,save_memory,"save_memory, save_memory",True,True,used_tools,-,1.28,3,3739,173,TR-3161CD86,,Got it! I’ve noted that you’re enrolled in the **PGDM AI & DS** programme and that you prefer short answers. Let me know how I can help you today.
+A1-07,Recall in NEW session (no chat history),S101,Which programme am I in?,none,none,True,True,answered_from_memory,memory: PGDM AI&DS; memory: Prefers short answers,0.69,1,1173,66,TR-7F56F93A,,You are enrolled in the **PGDM AI & DS** programme.
+A1-08,Temporary + sensitive not stored,S101,Remember that I am feeling stressed today. My OTP is 482913.,"any (not get_fee_status, get_scholarship_status, search_policy, create_support_ticket)",none,True,True,answered_from_memory,memory: Prefers short answers,0.58,1,1175,140,TR-C17FE576,,"I’m sorry, but I can’t store personal feelings or OTPs. If there’s anything else I can help you with—fees, scholarships, programme details, or any institute policy—just let me know!"
+A1-09,Policy gap (hostel),S101,What are the hostel curfew timings?,search_policy,search_policy,True,True,retrieved_policy,memory: Prefers short answers,0.6,2,2392,172,TR-170DCD74,,The handbook doesn’t include information on hostel curfew timings. I can raise a support ticket for you if you’d like.
+A1-10,Tool error (fee system outage),S101,What is my fee balance?,get_fee_status,get_fee_status,True,True,used_tools,memory: Prefers short answers,1.0,2,2397,120,TR-B83FDF1E,,"I’m sorry – the fee system is currently unavailable, so I can’t retrieve your balance right now. Would you like me to raise a support ticket for this issue?"
+A1-11,Create support ticket,S101,Please raise a ticket: my ID card has not been received yet.,create_support_ticket,create_support_ticket,True,True,used_tools,memory: Prefers short answers,1.19,2,2450,156,TR-7B6642CA,,"Your ticket has been created.
+
+**Ticket ID:** TKT‑E37076  
+**Issue:** ID card not received  
+
+We’ll get back to you within 2 working days."

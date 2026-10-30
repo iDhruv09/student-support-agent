@@ -1,3 +1,9 @@
+import os, sys
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, ROOT)   # find agent.py, tools.py, memory.py ... in the project root
+os.chdir(ROOT)             # so data/... and app.py paths work too
+
+
 """test_tools.py - tests every tool directly (no LLM involved)."""
 import json
 import tools

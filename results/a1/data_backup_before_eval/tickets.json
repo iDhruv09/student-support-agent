@@ -1,0 +1,11 @@
+[
+  {
+    "ticket_id": "TKT-F10BD7",
+    "student_id": "S101",
+    "category": "record",
+    "issue": "ID card not received yet",
+    "status": "Open",
+    "created_at": "2026-10-30T23:46:22",
+    "expected_response": "within 2 working days"
+  }
+]

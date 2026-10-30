@@ -1,4 +1,9 @@
-# check_data.py - verifies the data files from Step 2
+
+
+import os, sys
+ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+sys.path.insert(0, ROOT)   # find agent.py, tools.py, memory.py ... in the project root
+os.chdir(ROOT)             # so data/... and app.py paths work too# check_data.py - verifies the data files from Step 2
 import json
 
 print("1. Checking students.json...")

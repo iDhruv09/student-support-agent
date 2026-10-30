@@ -14,3 +14,12 @@ __pycache__/
 .DS_Store 
 Thumbs.db 
 .vscode/
+
+
+
+# Runtime files (recreated automatically)
+data/memory.json
+data/tickets.json
+data/traces.jsonl
+data/pending.json
+data/audit_log.jsonl

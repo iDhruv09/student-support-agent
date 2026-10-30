@@ -1,0 +1,15 @@
+{
+  "suite": "a1",
+  "model": "openai/gpt-oss-120b",
+  "run_at": "2026-10-30T23:50:34",
+  "tests": 11,
+  "passed": 11,
+  "accuracy_pct": 100.0,
+  "tool_choice_appropriate_pct": 100.0,
+  "avg_latency_s": 1.22,
+  "p90_latency_s": 2.11,
+  "avg_input_tokens": 2402,
+  "avg_output_tokens": 174,
+  "total_tokens": 28336,
+  "failed_tests": []
+}

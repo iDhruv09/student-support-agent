@@ -1,1 +1,16 @@
-{}
+{
+  "S101": [
+    {
+      "id": "mem-1-230550",
+      "fact": "PGDM AI&DS",
+      "category": "programme",
+      "saved_at": "2026-10-30T23:05:50"
+    },
+    {
+      "id": "mem-2-230551",
+      "fact": "Prefers short answers",
+      "category": "preference",
+      "saved_at": "2026-10-30T23:05:51"
+    }
+  ]
+}

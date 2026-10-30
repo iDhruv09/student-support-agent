@@ -151,5 +151,14 @@
     "status": "Open",
     "created_at": "2026-10-30T01:03:36",
     "expected_response": "within 2 working days"
+  },
+  {
+    "ticket_id": "TKT-221187",
+    "student_id": "S101",
+    "category": "other",
+    "issue": "Request information about hostel curfew timings",
+    "status": "Open",
+    "created_at": "2026-10-30T23:12:33",
+    "expected_response": "within 2 working days"
   }
 ]

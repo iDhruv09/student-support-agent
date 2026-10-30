@@ -1,0 +1,27 @@
+# Streamlit theme for the Student Support Agent.
+# Colours come from the Adani brochure palette; theme.py adds the finer styling.
+# This file contains NO secrets, so it is safe to commit.
+
+[theme]
+base = "light"
+primaryColor = "#8E278F"
+backgroundColor = "#FFFFFF"
+secondaryBackgroundColor = "#F6EFF7"
+textColor = "#25232B"
+linkColor = "#68246C"
+borderColor = "#E7E4EA"
+baseRadius = "0.6rem"
+font = "sans-serif"
+
+[theme.sidebar]
+backgroundColor = "#8E278F"
+secondaryBackgroundColor = "#7A2080"
+textColor = "#FFFFFF"
+primaryColor = "#4B1A4E"
+borderColor = "#B66FB7"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false
